@@ -36,11 +36,11 @@
   "engines": {
     "node": ">= 18"
   },
+  "dependencies": {
+    "map-transform": "^0.5.2"
+  },
   "devDependencies": {
     "@integreat/ts-dev-setup": "^4.1.1",
     "integreat": "^0.8.9"
-  },
-  "dependencies": {
-    "map-transform": "^0.5.2"
   }
 }
