@@ -4,7 +4,7 @@ Adapter to support URI templates in
 [Integreat](https://github.com/integreat-io/integreat).
 
 [![npm Version](https://img.shields.io/npm/v/integreat-adapter-uri.svg)](https://www.npmjs.com/package/integreat-adapter-uri)
-[![Maintainability](https://api.codeclimate.com/v1/badges/95c9ac1d21d1ab2424ac/maintainability)](https://codeclimate.com/github/integreat-io/integreat-adapter-uri/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8479515be4b8f560d0a5/maintainability)](https://codeclimate.com/github/integreat-io/integreat-adapter-uri/maintainability)
 
 ## Getting started
 
