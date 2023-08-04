@@ -10,7 +10,7 @@ Adapter to support URI templates in
 
 ### Prerequisits
 
-Requires node v18 and Integreat v0.8.
+Requires node v18 and Integreat v1.0.
 
 ### Installing and using
 
@@ -45,7 +45,7 @@ Example service configuration:
   adapters: ['uri'],
   options: {,
   endpoints: [
-    { options: { uri: 'https://api.com/{{payload.id}}' } } // Will be expanded to e.g. https://api.com/123
+    { options: { uri: 'https://api.com/{payload.id}' } } // Will be expanded to e.g. https://api.com/123
   ]
 }
 ```

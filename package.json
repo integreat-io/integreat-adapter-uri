@@ -38,10 +38,10 @@
     "node": ">= 18"
   },
   "dependencies": {
-    "map-transform": "^0.5.2"
+    "map-transform": "^0.5.6"
   },
   "devDependencies": {
     "@integreat/ts-dev-setup": "^4.1.1",
-    "integreat": "^0.8.9"
+    "integreat": "^1.0.0"
   }
 }
