@@ -1,4 +1,5 @@
-import test from 'ava'
+import test from 'node:test'
+import assert from 'node:assert/strict'
 
 import adapter from './index.js'
 
@@ -8,27 +9,27 @@ const options = {}
 
 // Tests -- prepareOptions
 
-test('should prepare empty options', (t) => {
+test('should prepare empty options', () => {
   const options = {}
   const expected = {}
 
   const ret = adapter.prepareOptions(options, 'api')
 
-  t.deepEqual(ret, expected)
+  assert.deepEqual(ret, expected)
 })
 
-test('should remove all unknown options', (t) => {
+test('should remove all unknown options', () => {
   const options = { dontKnow: 'whatisthis' }
   const expected = {}
 
   const ret = adapter.prepareOptions(options, 'api')
 
-  t.deepEqual(ret, expected)
+  assert.deepEqual(ret, expected)
 })
 
 // Tests -- normalize
 
-test('should not touch action on normalization', async (t) => {
+test('should not touch action on normalization', async () => {
   const action = {
     type: 'GET',
     payload: { type: 'entry' },
@@ -42,12 +43,12 @@ test('should not touch action on normalization', async (t) => {
 
   const ret = await adapter.normalize(action, options)
 
-  t.deepEqual(ret, expected)
+  assert.deepEqual(ret, expected)
 })
 
 // Tests -- serialize
 
-test('should replace placeholders in uri template', async (t) => {
+test('should replace placeholders in uri template', async () => {
   const action = {
     type: 'GET',
     payload: { type: 'entry', id: 'ent1', archived: true, cacheAge: 3600 },
@@ -71,10 +72,10 @@ test('should replace placeholders in uri template', async (t) => {
 
   const ret = await adapter.serialize(action, options)
 
-  t.deepEqual(ret, expected)
+  assert.deepEqual(ret, expected)
 })
 
-test('should not touch action without uri template on serialization', async (t) => {
+test('should not touch action without uri template on serialization', async () => {
   const action = {
     type: 'GET',
     payload: { type: 'entry', sourceService: 'api' },
@@ -85,5 +86,5 @@ test('should not touch action without uri template on serialization', async (t) 
 
   const ret = await adapter.serialize(action, options)
 
-  t.deepEqual(ret, expected)
+  assert.deepEqual(ret, expected)
 })
