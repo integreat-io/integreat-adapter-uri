@@ -1,4 +1,4 @@
-import mapTransform from 'map-transform'
+import mapTransformSync from 'map-transform/next'
 import type { AsyncTransformer } from 'map-transform/types.js'
 
 export interface Props extends Record<string, unknown> {
@@ -35,9 +35,9 @@ function extractPathModifiers(path: string) {
 
 function prepareReplacement(rawPath: string, legacyDontEncode = false) {
   const { path, dontEncode } = extractPathModifiers(rawPath)
-  const getFn = mapTransform(path)
+  const getFn = mapTransformSync(path)
   return async function get(data: unknown) {
-    return forceString(await getFn(data), !(dontEncode || legacyDontEncode))
+    return forceString(getFn(data), !(dontEncode || legacyDontEncode))
   }
 }
 
@@ -77,7 +77,7 @@ const transformer: AsyncTransformer = function generateUri({
     typeof template === 'string' ? prepareTemplate(template) : undefined
   return () => async (data: unknown) => {
     if (templatePath) {
-      const templateFromPath = await mapTransform(templatePath)(data)
+      const templateFromPath = mapTransformSync(templatePath)(data)
       if (typeof templateFromPath === 'string') {
         parts = prepareTemplate(templateFromPath)
       }

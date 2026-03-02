@@ -39,7 +39,7 @@
     "node": ">= 18"
   },
   "dependencies": {
-    "map-transform": "^0.5.6"
+    "map-transform": "^1.6.0-rc.4"
   },
   "devDependencies": {
     "@integreat/ts-dev-setup": "^8.2.0",
