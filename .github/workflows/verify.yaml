@@ -10,11 +10,9 @@ jobs:
   verify:
     name: Lint and test
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [22, 24, 26]
-
     steps:
       - uses: actions/checkout@v7
       - name: Use Node.js ${{ matrix.node-version }}
@@ -23,18 +21,16 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm ci
-      - run: npm run check-types
       - run: npm run lint
+      - run: npm run check-types
       - run: npm test
 
   verify_legacy:
     name: Lint and test
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [18.19, 20]
-
     steps:
       - uses: actions/checkout@v7
       - name: Use Node.js ${{ matrix.node-version }}
