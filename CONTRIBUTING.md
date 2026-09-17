@@ -1,8 +1,9 @@
 # Contributing
 
 When contributing to this repository, please first discuss the change you wish
-to make via [issues](https://github.com/integreat-io/integreat-adapter-uri/issues)
-with the owners of this repository before making a change.
+to make via
+[issues](https://github.com/integreat-io/integreat-adapter-uri/issues) with the
+owners of this repository before making a change.
 
 Please note we have a code of conduct, please follow it in all your interactions
 with the project.
@@ -57,11 +58,11 @@ Project maintainers are responsible for clarifying the standards of acceptable
 behavior and are expected to take appropriate and fair corrective action in
 response to any instances of unacceptable behavior.
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
+Project maintainers have the right and responsibility to remove, edit, or reject
+comments, commits, code, wiki edits, issues, and other contributions that are
+not aligned to this Code of Conduct, or to ban temporarily or permanently any
+contributor for other behaviors that they deem inappropriate, threatening,
+offensive, or harmful.
 
 ### Scope
 
@@ -75,12 +76,11 @@ further defined and clarified by project maintainers.
 ### Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at post@kjellmorten.no. All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an
-incident. Further details of specific enforcement policies may be posted
-separately.
+reported by contacting the project team at post@kjellmorten.no. All complaints
+will be reviewed and investigated and will result in a response that is deemed
+necessary and appropriate to the circumstances. The project team is obligated to
+maintain confidentiality with regard to the reporter of an incident. Further
+details of specific enforcement policies may be posted separately.
 
 Project maintainers who do not follow or enforce the Code of Conduct in good
 faith may face temporary or permanent repercussions as determined by other
@@ -88,8 +88,8 @@ members of the project's leadership.
 
 ### Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at [http://contributor-covenant.org/version/1/4][version]
+This Code of Conduct is adapted from the [Contributor Covenant][homepage],
+version 1.4, available at [http://contributor-covenant.org/version/1/4][version]
 
 [homepage]: http://contributor-covenant.org
 [version]: http://contributor-covenant.org/version/1/4/

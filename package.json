@@ -42,8 +42,8 @@
     "map-transform": "1.6.0-rc.9"
   },
   "devDependencies": {
-    "@integreat/ts-dev-setup": "^8.2.0",
-    "@types/node": "^24.11.0",
-    "integreat": "^1.6.4"
+    "@integreat/ts-dev-setup": "^10.0.0",
+    "@types/node": "^26.6.1",
+    "integreat": "^1.7.1"
   }
 }
