@@ -1,4 +1,4 @@
-import mapTransformSync from 'map-transform/next'
+import { mapTransformSync } from 'map-transform/next'
 import type { AsyncTransformer } from 'map-transform/types.js'
 
 export interface Props extends Record<string, unknown> {
@@ -59,13 +59,13 @@ export const prepareTemplate = (template: string) => [...split(template)]
 
 export const replaceTemplate = async (
   parts: (string | ((value: unknown) => Promise<string>))[],
-  data: unknown
+  data: unknown,
 ): Promise<string> =>
   (
     await Promise.all(
       parts.map(async (part) =>
-        typeof part === 'function' ? await part(data) : part
-      )
+        typeof part === 'function' ? await part(data) : part,
+      ),
     )
   ).join('')
 
